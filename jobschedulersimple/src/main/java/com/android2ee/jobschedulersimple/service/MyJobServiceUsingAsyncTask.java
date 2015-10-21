@@ -55,7 +55,8 @@ public class MyJobServiceUsingAsyncTask extends JobService {
     public boolean onStartJob(JobParameters params) {
         Log.e("MyJobServiceAsync", "onStartJob called <--------------------------------");
         new MyAsyncTask().execute(params);
-        return false;
+        //I make the job in a separate thread (yes I did)
+        return true;
     }
 
     /**
