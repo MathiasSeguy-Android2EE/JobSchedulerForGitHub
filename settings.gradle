@@ -1,1 +1,1 @@
-include ':app', ':jobschedulersimple'
+include ':app'
